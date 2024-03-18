@@ -1,3 +1,5 @@
+--https://ourworldindata.org/covid-deaths
+-- Download the data set excel files and use it when running the SQL instructions below
 
 Select *
 From PortfolioProject..CovidDeaths
