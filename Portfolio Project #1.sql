@@ -37,7 +37,7 @@ order by 1,2
 
 -- Looking at Countries with Highest Infection Rate compared to Population
 -- desc function allows to sort data or result in a descending order
-Select Location, Population, MAX(total_cases) as HighestInfectionCount, MAX((total_cases/population))*100 as PercentPopulationInfected
+Select Location, Population, MAX(total_cases) as HighestInfectionCount, ((MAX(total_cases)/population))*100 as PercentPopulationInfected
 From PortfolioProject..CovidDeaths
 -- Where Location like '%states%'
 Group by Location, Population
